@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.TableLayout;
 
 import com.imamabdulazis.tabhost.adapter.ViewPagerAdapter;
+import com.imamabdulazis.tabhost.fragment.CallFragment;
 import com.imamabdulazis.tabhost.fragment.ChatFragment;
 import com.imamabdulazis.tabhost.fragment.StatusFragment;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.addFrag(new ChatFragment(), "Chat");
         adapter.addFrag(new StatusFragment(), "Status");
-        adapter.addFrag(new ChatFragment(), "Call");
+        adapter.addFrag(new CallFragment(), "Call");
         viewPager.setAdapter(adapter);
     }
 
